@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  animation-name: opacity;
+  animation-duration: 1s;
+}
+#background-about {
+  margin-top: -10%;
+  position: absolute;
+  width: -webkit-fill-available;
+  z-index: -1;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+body {
+  overflow: hidden;
+}
+#background-video {
+  margin-top: -12%;
+  position: absolute;
+  width: -webkit-fill-available;
+  z-index: -1;
+}
+#mail {
+  position: fixed;
+}
+#mail-container {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+}
+#mail-icon {
+  padding-left: 45px;
+}
+#underline-animation {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+#underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+nav {
+  position: fixed;
+  transform: translate(0, 50vh);
+  right: 50px;
+}
+#ellipses-container {
+  display: flex;
+  flex-direction: column;
+}
+#emoji-container {
+  padding-top: 9%;
+  display: flex;
+  justify-content: center;
+}
+#main-text {
+  margin-top: 30px;
+}
+h1 {
+  font-size: 64px;
+  text-align: center;
+}
+#skillset-container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+#about-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+p {
+  line-height: 200%;
+  letter-spacing: 1px;
+}
